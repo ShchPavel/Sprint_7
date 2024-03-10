@@ -3,8 +3,10 @@ from data import Urls
 import allure
 
 
-@allure.step('Получаем список заказов')
-def get_orders():
-    response = requests.get(Urls.base_url + '/api/v1/orders')
-    return response
+class GetOrder:
+    @staticmethod
+    @allure.step('Получаем список заказов')
+    def get_orders_without_parameters():
+        response = requests.get(Urls.get_orders_url)
+        return response
 
