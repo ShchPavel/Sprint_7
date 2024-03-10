@@ -19,5 +19,5 @@ class CourierLogin:
         if password is not None:
             payload["password"] = password
 
-        response = requests.post(Urls.login_url, data=json.dumps(payload), headers={'Content-Type': 'application/json; charset=utf-8'})
+        response = requests.post(Urls.LOGIN_URL, data=json.dumps(payload), headers={'Content-Type': 'application/json; charset=utf-8'})
         return response

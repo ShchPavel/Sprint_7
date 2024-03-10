@@ -12,6 +12,6 @@ class CreateOrder:
         payload = copy.deepcopy(OrderBody.order_body_without_color)
         if color_list is not None:
             payload['color'] = color_list
-        response = requests.post(Urls.create_order_url, data=json.dumps(payload), headers={'Content-Type': 'application/json; charset=utf-8'})
+        response = requests.post(Urls.CREATE_ORDER_URL, data=json.dumps(payload), headers={'Content-Type': 'application/json; charset=utf-8'})
         return response
 

@@ -19,7 +19,7 @@ class RegisterCourier:
             "firstName": first_name
         }
 
-        response = requests.post(Urls.register_courier_url, data=payload)
+        response = requests.post(Urls.REGISTER_COURIER_URL, data=payload)
 
         return response
 
@@ -32,6 +32,6 @@ class RegisterCourier:
             "firstName": first_name
         }
 
-        response = requests.post(Urls.register_courier_url, data=payload)
+        response = requests.post(Urls.REGISTER_COURIER_URL, data=payload)
 
         return response
